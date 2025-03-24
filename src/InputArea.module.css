@@ -1,8 +1,8 @@
 .inputArea {
   display: flex;
   padding: 12px;
-  background-color: #ffffff;
-  border-top: 1px solid #e5e5e6;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
   align-items: flex-end;
 }
 
@@ -11,20 +11,22 @@
   min-height: 44px;
   max-height: 200px;
   padding: 10px 14px;
-  border: 1px solid #e5e5e6;
   border-radius: 8px;
   resize: none;
   font-size: 15px;
   line-height: 1.5;
   outline: none;
   margin: 0 8px;
-  background-color: #f7f7f8;
   transition: border-color 0.2s;
+
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
 }
 
 .textInput:focus {
-  border-color: #10a37f;
-  background-color: #ffffff;
+  border-color: var(--primary-color, #10a37f);
+  background-color: var(--bg-color);
 }
 
 .sendButton {
@@ -32,7 +34,7 @@
   height: 44px;
   border: none;
   border-radius: 8px;
-  background-color: #10a37f;
+  background-color: var(--primary-color, #10a37f);
   color: white;
   display: flex;
   align-items: center;
@@ -42,12 +44,12 @@
 }
 
 .sendButton:disabled {
-  background-color: #e5e5e6;
+  background-color: var(--disabled-color, #e5e5e6);
   cursor: not-allowed;
 }
 
 .sendButton:not(:disabled):hover {
-  background-color: #0d8a6d;
+  background-color: var(--primary-hover, #0d8a6d);
 }
 
 .iconButton {
@@ -56,7 +58,7 @@
   border: none;
   border-radius: 8px;
   background-color: transparent;
-  color: #6e6e80;
+  color: var(--icon-color, #6e6e80);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +66,8 @@
 }
 
 .iconButton:hover {
-  background-color: #f0f0f0;
+  background-color: var(--hover-bg-color);
+  color: var(--text-color);
 }
 
 .attachmentButtons {

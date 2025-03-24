@@ -1,7 +1,7 @@
 .header {
   padding: 16px 20px;
-  border-bottom: 1px solid #e5e5e6;
-  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@
 .header h1 {
   font-size: 18px;
   font-weight: 600;
-  color: #343541;
+  color: var(--text-color);
   margin: 0;
 }
 
@@ -21,15 +21,15 @@
 
 .headerButton {
   padding: 6px 12px;
-  background-color: #f7f7f8;
-  border: 1px solid #e5e5e6;
+  background-color: var(--button-bg);
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   font-size: 13px;
-  color: #6e6e80;
+  color: var(--text-color);
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
 }
 
 .headerButton:hover {
-  background-color: #f0f0f0;
+  background-color: var(--hover-bg-color);
 }

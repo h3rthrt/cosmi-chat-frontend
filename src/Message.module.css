@@ -29,7 +29,7 @@
   width: 36px;
   height: 36px;
   border-radius: 4px;
-  background-color: #10a37f;
+  background-color: var(--ai-avatar-color, #10a37f);
   color: white;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: #6e6e80;
+  background-color: var(--user-avatar-color, #6e6e80);
   color: white;
   display: flex;
   align-items: center;
@@ -65,14 +65,16 @@
 }
 
 .aiMessage .text {
-  background-color: #ffffff;
-  border: 1px solid #e5e5e6;
+  background-color: var(--message-ai-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
   border-radius: 8px 8px 8px 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .userMessage .text {
-  background-color: #10a37f;
+  background-color: var(--message-user-bg);
+  color: var(--message-user-text);
   color: white;
   border-radius: 8px 8px 0 8px;
 }
@@ -82,7 +84,7 @@
   align-items: center;
   margin-top: 6px;
   font-size: 12px;
-  color: #6e6e80;
+  color: var(--timestamp-color);
 }
 
 .userMessage .footer {
@@ -101,22 +103,23 @@
 .actionButton {
   background: none;
   border: none;
-  color: #6e6e80;
+  color: var(--timestamp-color);
   cursor: pointer;
   padding: 4px;
   border-radius: 4px;
   display: flex;
   align-items: center;
+  color: var(--timestamp-color);
 }
 
 .actionButton:hover {
-  background-color: #f0f0f0;
-  color: #10a37f;
+  background-color: var(--hover-bg-color);
+  color: var(--text-color);
 }
 
 /* Добавьте эти стили для форматирования ответа */
 .text pre {
-  background-color: #f6f8fa;
+  background-color: var(--code-bg) !important;
   border-radius: 6px;
   padding: 16px;
   overflow-x: auto;
@@ -139,7 +142,7 @@
 }
 
 .text a {
-  color: #0969da;
+  color: var(--link-color, #0969da);
   text-decoration: none;
 }
 
@@ -154,6 +157,20 @@
 .content {
   margin-bottom: 12px;
   line-height: 1.5;
+}
+
+.content pre {
+  background-color: var(--code-bg) !important;
+  border: 1px solid var(--border-color);
+}
+
+.content code {
+  background-color: rgba(175, 184, 193, 0.2);
+  color: inherit;
+}
+
+.content a {
+  color: #58a6ff; /* Яркий цвет для ссылок в темной теме */
 }
 
 .text ul {
