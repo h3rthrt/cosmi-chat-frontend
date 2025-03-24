@@ -1,0 +1,170 @@
+.message {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aiMessage {
+  margin-right: auto;
+}
+
+.userMessage {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  margin-right: 12px;
+  margin-top: 4px;
+}
+
+.userMessage .avatar {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+.aiAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: #10a37f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.userAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #6e6e80;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.content {
+  flex: 1;
+}
+
+.text {
+  padding: 12px 16px;
+  border-radius: 8px;
+  line-height: 1.5;
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.aiMessage .text {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e6;
+  border-radius: 8px 8px 8px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.userMessage .text {
+  background-color: #10a37f;
+  color: white;
+  border-radius: 8px 8px 0 8px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6e6e80;
+}
+
+.userMessage .footer {
+  justify-content: flex-end;
+}
+
+.timestamp {
+  margin-right: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  color: #6e6e80;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.actionButton:hover {
+  background-color: #f0f0f0;
+  color: #10a37f;
+}
+
+/* Добавьте эти стили для форматирования ответа */
+.text pre {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  margin: 10px 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.text code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  background-color: rgba(175, 184, 193, 0.2);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+}
+
+.text pre code {
+  background-color: unset;
+}
+
+.text a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
+
+.text strong {
+  font-weight: 600;
+}
+
+.content {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.text ul {
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+
+.text ol {
+  margin-left: 30px;
+}
+
+.text {
+  line-height: 1;
+}
